@@ -1,0 +1,44 @@
+{
+  "name": "ci-github",
+  "version": "0.1.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hanford/ci-github.git"
+  },
+  "homepage": "https://github.com/hanford/ci-github",
+  "bugs": "https://github.com/hanford/ci-github/issues",
+  "authors": [
+    "Jack Hanford"
+  ],
+  "tags": [
+    "github",
+    "CI",
+    "automated",
+    "comment",
+    "bot",
+    "travis",
+    "circle"
+  ],
+  "keywords": [
+    "github",
+    "CI",
+    "automated",
+    "comment",
+    "bot",
+    "travis",
+    "circle"
+  ],
+  "scripts": {},
+  "files": [
+    "bin"
+  ],
+  "bin": {
+    "github": "./bin/comment.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "assert": "~1.4.1",
+    "optimist": "~0.6.1"
+  },
+  "devDependencies": {}
+}
