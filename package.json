@@ -32,6 +32,7 @@
   "files": [
     "bin"
   ],
+  "main": "./bin/github.js",
   "bin": {
     "github": "./bin/comment.js"
   },
