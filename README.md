@@ -3,11 +3,21 @@
 Easily comment on github from CircleCI or TravisCI
 
 ### Usage
+
+From your CLI
 ```sh
 $ github --coment hey! --link https://jackhanford.com
 ```
 
-make sure you define the `GH_AUTH_TOKEN` environment variable as that is required to post comments!
+Or in node:
+```js
+const github = require('ci-github')
+const Github = github.create()
+
+Github.comment('Hello!')
+```
+
+Make sure you have your github access token defined using the `GH_AUTH_TOKEN` environment variable as that is required to post comments!
 
 <!-- ![preview](https://github.com/hanford/ci-github/blob/master/preview.png) -->
 
