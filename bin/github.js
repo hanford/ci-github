@@ -2,12 +2,11 @@ const { basename } = require('path')
 const { execSync } = require('child_process')
 
 const ENV = {
-  artifacts: 'CIRCLE_ARTIFACTS',
   auth: 'GH_AUTH_TOKEN',
   buildNum: 'CIRCLE_BUILD_NUM',
   buildUrl: 'CIRCLE_BUILD_URL',
   home: 'HOME',
-  pr: 'CI_PULL_REQUEST',
+  pr: 'CIRCLE_PULL_REQUEST',
   repo: 'CIRCLE_PROJECT_REPONAME',
   sha1: 'CIRCLE_SHA1',
   username: 'CIRCLE_PROJECT_USERNAME'
