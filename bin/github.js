@@ -35,7 +35,7 @@ module.exports = class Github {
     }
 
     ENV.commitMessage = exec('git --no-pager log --pretty=format:"%s" -1').replace(/\\"/g, '\\\\"')
-    ENV.prNumber = basename(ENV.pr)
+    ENV.prNumber = basename(ENV.pr || '') || ''
     ENV.githubDomain = options.githubDomain != null ? options.githubDomain : 'api.github.com'
 
     return new Github(ENV)
