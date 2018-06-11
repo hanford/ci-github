@@ -6,7 +6,7 @@ Easily comment on github from CircleCI or TravisCI
 
 From your CLI
 ```sh
-$ github --coment hey! --link https://jackhanford.com
+$ github --comment hey! --link https://jackhanford.com
 ```
 
 Or in node:
